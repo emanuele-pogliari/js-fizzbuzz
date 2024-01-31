@@ -11,6 +11,8 @@ body {
     height: 150px;
 
     border: solid 1px black;
+
+    animation: opacityChange .2s ease-in;
 }
 
 #grid {
@@ -18,4 +20,17 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     gap: 30px;
+}
+
+
+@keyframes opacityChange {
+    from {
+        opacity: 0.3;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
 }

@@ -8,6 +8,7 @@ for (let i = 1; i <= 100; i++) {
         newElement.innerHTML = i;
         newElement.style.fontSize = "20px";
         newElement.style.backgroundColor = "#1389B2";
+
         if (i % 3 === 0) {
             newElement.innerText = "Fizz";
             newElement.style.backgroundColor = "#0CD6A1";
@@ -20,5 +21,5 @@ for (let i = 1; i <= 100; i++) {
             newElement.innerText = "FizzBuzz";
             newElement.style.backgroundColor = "#F0466F";
         }
-    }, i * 200) //this calculation delays every single cicle by 100ms. So, every square will appears after that time.
+    }, i * 250) //this calculation delays every single cicle by 100ms. So, every square will appears after that time.
 }
