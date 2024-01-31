@@ -5,19 +5,19 @@ for (let i = 1; i <= 100; i++) {
     gridElement.append(newElement);
     newElement.className = "square";
     newElement.innerHTML = i;
+    newElement.style.fontSize = "20px";
+    newElement.style.backgroundColor = "#1389B2";
     console.log(i)
     if (i % 3 === 0) {
-        newElement.innerText = "fizz";
-        newElement.className += " cass";
-        newElement.style.color = "blue";
-
+        newElement.innerText = "Fizz";
+        newElement.style.backgroundColor = "#0CD6A1";
     }
     else if (i % 5 === 0) {
-        newElement.innerText = "buzz";
-        newElement.style.color = "yellow";
+        newElement.innerText = "Buzz";
+        newElement.style.backgroundColor = "#FFD166";
     }
     if (i % 5 === 0 && i % 3 === 0) {
-        newElement.innerText = "s. francisco";
-        newElement.style.color = "red";
+        newElement.innerText = "FizzBuzz";
+        newElement.style.backgroundColor = "#F0466F";
     }
 }
