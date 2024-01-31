@@ -7,7 +7,6 @@ for (let i = 1; i <= 100; i++) {
     newElement.innerHTML = i;
     newElement.style.fontSize = "20px";
     newElement.style.backgroundColor = "#1389B2";
-    console.log(i)
     if (i % 3 === 0) {
         newElement.innerText = "Fizz";
         newElement.style.backgroundColor = "#0CD6A1";
